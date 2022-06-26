@@ -30,7 +30,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#ccc'
 source $ZSH/oh-my-zsh.sh
 
 # Source aliases
-source $HOME/.config/aliases/aliases.sh
+source $HOME/.aliases
 
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
