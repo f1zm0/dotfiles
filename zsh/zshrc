@@ -14,7 +14,7 @@ export HISTSIZE=10000
 export SAVEHIST=$HISTSIZE
 
 # Theme
-ZSH_THEME="afowler"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # ZSH Plugin definitions
 plugins=(
@@ -39,7 +39,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Oh-My-ZSH variables
 export PATH=$PATH:/usr/local/go/bin
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # Generate TOC from directory listing
 alias lstoc="ls -l | awk '{print \"- [\"\$9\"](\"\$9\")\"}'"
@@ -61,3 +60,9 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 
 # Yarn
 export PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/bin"
+
+# Disable P10k config prompt at login
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
