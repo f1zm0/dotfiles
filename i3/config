@@ -4,13 +4,13 @@ set $mod Mod1
 # Set display resolution
 exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x950 --rate 59.95
 
-font pango:JetBrainsMono Nerd Font Mono 12
+font pango:JetBrainsMono Nerd Font 12
 
 # Press mod key to be able to resize floating windows
 floating_modifier $mod
 
 # Open new terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec kitty
 
 #Close window
 bindsym $mod+Shift+q kill
