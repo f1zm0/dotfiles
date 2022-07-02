@@ -38,18 +38,22 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'rafi/awesome-vim-colorschemes'
+Plug 'dylanaraps/wal.vim'
+
 
 call plug#end()
 
 " =======================
 " Themes
 " =======================
-"
-set background=dark
-colorscheme scheakur
 
+set background=dark
+colorscheme wal
+
+" Transparent bg
+hi Normal guibg=NONE ctermbg=NONE
 
 " ==========================
 " Files indentation
@@ -123,7 +127,7 @@ let g:fzf_colors =
 " =======================
 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='oceanicnextminimal'
+let g:airline_theme='wal'
 
 " =======================
 " Lightline
