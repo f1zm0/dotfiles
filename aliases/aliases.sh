@@ -1,5 +1,6 @@
 # Nvim
 alias v="/usr/bin/nvim"
+alias vim="/usr/bin/nvim"
 
 # Hibernate the machine. Save state in RAM and loads it at startup.
 alias hibernate='/usr/bin/systemctl suspend'
