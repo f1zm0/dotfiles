@@ -1,5 +1,6 @@
 # Nvim
 alias v="/usr/bin/nvim"
+<<<<<<< HEAD
 alias vi="/usr/bin/nvim"
 alias vim="/usr/bin/nvim"
 
@@ -8,6 +9,9 @@ alias t="/usr/bin/tee"
 
 # Pacman
 alias p="/usr/bin/pacman"
+=======
+alias vim="/usr/bin/nvim"
+>>>>>>> dev
 
 # Hibernate the machine. Save state in RAM and loads it at startup.
 alias hibernate='/usr/bin/systemctl suspend'
