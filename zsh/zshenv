@@ -1,0 +1,53 @@
+# +-----+
+# | Zsh |
+# +-----+
+
+export HISTFILE="$ZDOTDIR/.zhistory"    # history file
+export HISTSIZE=10000                   # maximum events for internal history
+export SAVEHIST=10000                   # maximum events in history file
+
+# +--------------+
+# | Default apps |
+# +--------------+
+
+export EDITOR="nvim"
+export VISUAL="nvim"
+export READER="zathura"
+export TERMINAL="kitty"
+export BROWSER="chromium"
+export VIDEO="mpv"
+export IMAGE="sxiv"
+export COLORTERM="truecolor"
+export OPENER="xdg-open"
+export PAGER="less"
+export WM="bspwm"
+
+# +-----+
+# | Fzf |
+# +-----+
+
+export FZF_DEFAULT_COMMAND='fd --type f'
+
+# +----+
+# | Go |
+# +----+
+
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+
+# +-----+
+# | Nim |
+# +-----+
+
+export PATH=/home/dev/.nimble/bin:$PATH
+
+# +--------+
+# | NodeJS |
+# +--------+
+
+export nvm_dir="$home/.nvm"
+export PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/bin"
+
+
+
