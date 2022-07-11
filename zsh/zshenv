@@ -48,6 +48,3 @@ export PATH=/home/dev/.nimble/bin:$PATH
 
 export nvm_dir="$home/.nvm"
 export PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/bin"
-
-
-
