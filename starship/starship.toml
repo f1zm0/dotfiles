@@ -1,0 +1,12 @@
+[username]
+style_user = "blue bold"
+style_root = "red bold"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[$ssh_symbol](bold blue)@[$hostname](bold blue) "
+trim_at = ""
+disabled = false
