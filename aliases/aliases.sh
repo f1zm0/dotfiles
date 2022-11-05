@@ -82,6 +82,7 @@ alias vim="/usr/bin/nvim"
 
 alias tmuxk='tmux kill-session -t'
 alias tmuxa='tmux attach -t'
+alias tmuxn='tmux new -s'
 alias tmuxl='tmux list-sessions'
 
 # +-----+
@@ -109,8 +110,8 @@ alias gcom='git commit -am'
 alias gcomm='git commit -am'
 alias gamen='git commit --amend'
 alias glog='git log --graph --oneline --decorate'
-alias gpush='git push origin'
-alias gpull='git pull origin'
+alias gpom='git push origin main'
+alias gpod='git push origin dev'
 
 # +--------+
 # | Docker |
@@ -120,6 +121,12 @@ alias dockimg='docker images'
 alias dockps='docker ps'
 alias dockpsa='docker ps -a'
 alias dockclean='docker rm $(docker ps --filter status=exited -q)'
+
+# +-------+
+# | Tools |
+# +-------+
+alias msfconsole="docker-compose -f $HOME/Tools/metasploit/docker-compose.yml run --rm --no-deps -e MSF_UID=$(id -u) -e MSF_GID=$(id -g) ms"
+alias msfvenom="docker-compose -f $HOME/Tools/metasploit/docker-compose.yml run --rm --no-deps -e MSF_UID=$(id -u) -e MSF_GID=$(id -g) ms ./msfvenom"
 
 # +---------+
 # | Strings |
