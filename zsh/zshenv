@@ -14,9 +14,14 @@ export PAGER="less"
 export WM="bspwm"
 
 # -------------
+# -- Bin 
+# -------------
+export PATH=$PATH:$HOME/.local/bin   # pip packages
+
+# -------------
 # -- Zsh 
 # -------------
-export HISTFILE="$ZDOTDIR/.zhistory" # history file
+export HISTFILE="$HOME/.zsh_history" # history file
 export HISTSIZE=10000                # maximum events for internal history
 export SAVEHIST=10000                # maximum events in history file
 
