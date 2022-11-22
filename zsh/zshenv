@@ -55,3 +55,8 @@ export PATH=$PATH:$NIMBLEBIN
 export NVMDIR=$HOME/.nvm
 export YARNBIN=$HOME/.yarn/bin
 export PATH=$PATH:$YARNBIN
+
+# -------------
+# -- Python
+# -------------
+export PATH=$HOME/.local/bin # pip packages
