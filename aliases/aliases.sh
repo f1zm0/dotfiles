@@ -68,13 +68,14 @@ alias yayi="/usr/bin/yay -S"
 alias zshfix="$HOME/dotfiles/zsh/zsh_history_fix.sh"
 alias zshrc="/usr/bin/neovim ~/.zshrc"
 
-# +--------+
-# | Neovim |
-# +--------+
+# +----------+
+# | Hypervim |
+# +----------+
 
-alias v="/usr/bin/nvim"
-alias vi="/usr/bin/nvim"
-alias vim="/usr/bin/nvim"
+alias v="$HOME/.local/bin/hvim"
+alias vi="$HOME/.local/bin/hvim"
+alias vim="$HOME/.local/bin/hvim"
+alias hv="$HOME/.local/bin/hvim"
 
 # +------+
 # | Tmux |
