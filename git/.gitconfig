@@ -1,0 +1,13 @@
+[core]
+    editor = hvim
+
+[user]
+    name = f1zm0
+    username = f1zm0
+    email = root@fzm.ooo
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
