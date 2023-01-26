@@ -14,9 +14,9 @@ export PAGER="less"
 export WM="bspwm"
 
 # -------------
-# -- Bin 
+# -- Binaries 
 # -------------
-export PATH=$PATH:$HOME/.local/bin   # pip packages
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
 # -------------
 # -- Zsh 
@@ -55,8 +55,3 @@ export PATH=$PATH:$NIMBLEBIN
 export NVMDIR=$HOME/.nvm
 export YARNBIN=$HOME/.yarn/bin
 export PATH=$PATH:$YARNBIN
-
-# -------------
-# -- Python
-# -------------
-export PATH=$HOME/.local/bin # pip packages
