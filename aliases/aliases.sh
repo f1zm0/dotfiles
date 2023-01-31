@@ -91,6 +91,7 @@ alias tmuxl='tmux list-sessions'
 # +-----+
 
 # Short aliases
+alias g='git'
 alias ga='git add'
 alias gb='git branch' 
 alias gc='git commit -m'
@@ -113,11 +114,13 @@ alias gamen='git commit --amend'
 alias glog='git log --graph --oneline --decorate'
 alias gpom='git push origin main'
 alias gpod='git push origin dev'
+alias gpo='git push origin'
 
 # +--------+
 # | Docker |
 # +--------+
 
+alias dock='docker'
 alias dockimg='docker images'
 alias dockps='docker ps'
 alias dockpsa='docker ps -a'
@@ -126,6 +129,7 @@ alias dockclean='docker rm $(docker ps --filter status=exited -q)'
 # +-------+
 # | Tools |
 # +-------+
+
 alias msfconsole="docker-compose -f $HOME/Tools/metasploit/docker-compose.yml run --rm --no-deps -e MSF_UID=$(id -u) -e MSF_GID=$(id -g) ms"
 alias msfvenom="docker-compose -f $HOME/Tools/metasploit/docker-compose.yml run --rm --no-deps -e MSF_UID=$(id -u) -e MSF_GID=$(id -g) ms ./msfvenom"
 
