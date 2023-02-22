@@ -191,5 +191,16 @@ alias lstoc="ls -l | awk '{print \"- [\"\$11\"](#\"\$11\")\"}'"
 alias h="cd ~"
 alias x="exit"
 
+# +---------------+
+# | Image preview |
+# +---------------+
+
+alias eog="mupdf"
+
+
+# +-------+
+# | Utils |
+# +-------+
+
 # Print all the custom aliases (in this file)
 alias aliases='cat $HOME/dotfiles/aliases/aliases.sh | grep ^alias'
