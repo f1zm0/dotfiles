@@ -36,6 +36,7 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH:$GOBIN
+export PATH=$PATH:/usr/local/go/bin
 
 # -------------
 # -- Rust 
