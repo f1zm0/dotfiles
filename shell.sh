@@ -34,26 +34,11 @@ git () {
     stow --target=$HOME git
 }
 
-vale () {
-    echo "Linking config for vale ..."
-    stow --target=$HOME vale 
-    mkdir -p $HOME/.config/vale/styles
-
-    if [ $? -eq 0 ]; then
-      stow --target=$HOME/.config/vale vocab
-    fi
-}
-
 # check that stow is installed
 if ! [ -x "$(command -v stow)" ]; then
   echo 'Error: stow is not installed.' >&2
   exit 1
 fi
-
-echo "==================="
-echo "Stowing dotfiles..."
-echo "==================="
-echo ""
 
 zsh
 starship
