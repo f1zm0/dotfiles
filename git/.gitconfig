@@ -5,7 +5,7 @@
     name = f1zm0
     username = f1zm0
     email = root@fzm.ooo
-	signingkey = 6479575141766A20
+    signingkey = 6479575141766A20
 
 [init]
     defaultBranch = main
