@@ -2,21 +2,19 @@
 
 zsh () {
     echo "Linking config for zsh and aliases ..."
-    # check if $HOME/.zshrc already exists
     if [ -f "$HOME/.zshrc" ]; then
-      echo "WARNING: $HOME/.zshrc already exists. Do you want to replace it with the one from dotfiles? (y/n)"
+        echo "WARNING: $HOME/.zshrc already exists. Do you want to replace it with the one from dotfiles? (y/n)"
         read -r response
         if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
         then
-          rm $HOME/.zshrc
+            rm $HOME/.zshrc
+            stow --target=$HOME zsh
         else
-          echo "Aborting..."
-          exit 1
+            echo "Aborting..."
+            exit 1
         fi
     fi
 
-    # linking command aliases
-    stow --target=$HOME aliases
 }
 
 starship () {
@@ -36,8 +34,8 @@ git () {
 
 # check that stow is installed
 if ! [ -x "$(command -v stow)" ]; then
-  echo 'Error: stow is not installed.' >&2
-  exit 1
+    echo 'Error: stow is not installed.' >&2
+    exit 1
 fi
 
 zsh

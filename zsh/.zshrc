@@ -1,5 +1,5 @@
 # Aliases
-source $HOME/.aliases.sh
+source $HOME/.aliases.zsh
 
 # Enable starship
 eval "$(starship init zsh)"
