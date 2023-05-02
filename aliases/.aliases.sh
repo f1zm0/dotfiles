@@ -96,6 +96,7 @@ alias ga='git add'
 alias gb='git branch' 
 alias gc='git commit -m'
 alias gca='git commit -am'
+alias gc='git commit -S -am' # signed commit
 alias gco='git checkout'
 alias gd='git diff'
 alias gl='git log --graph --oneline --decorate'

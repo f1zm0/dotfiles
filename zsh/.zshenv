@@ -26,6 +26,11 @@ export HISTSIZE=10000                # maximum events for internal history
 export SAVEHIST=10000                # maximum events in history file
 
 # -------------
+# -- Starship
+# -------------
+export STARSHIP_CONFIG="$HOME/.starship.toml" # custom config path
+
+# -------------
 # -- Fzf 
 # -------------
 export FZF_DEFAULT_COMMAND='fd --type f'
@@ -56,3 +61,4 @@ export PATH=$PATH:$NIMBLEBIN
 export NVMDIR=$HOME/.nvm
 export YARNBIN=$HOME/.yarn/bin
 export PATH=$PATH:$YARNBIN
+
