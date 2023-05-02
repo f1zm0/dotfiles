@@ -42,4 +42,3 @@ zsh
 starship
 tmux
 git
-vale
