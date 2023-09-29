@@ -96,6 +96,7 @@ alias ga='git add'
 alias gb='git branch' 
 alias gc='git commit -m'
 alias gca='git commit -am'
+alias gc='git commit -S -am' # signed commit
 alias gco='git checkout'
 alias gd='git diff'
 alias gl='git log --graph --oneline --decorate'
@@ -132,6 +133,12 @@ alias dockclean='docker rm $(docker ps --filter status=exited -q)'
 
 alias msfconsole="docker-compose -f $HOME/Tools/metasploit/docker-compose.yml run --rm --no-deps -e MSF_UID=$(id -u) -e MSF_GID=$(id -g) ms"
 alias msfvenom="docker-compose -f $HOME/Tools/metasploit/docker-compose.yml run --rm --no-deps -e MSF_UID=$(id -u) -e MSF_GID=$(id -g) ms ./msfvenom"
+
+# build impacket:latest image with docker build after cloning fortra/impacket repo
+smbserver() {
+    echo -e "Start server:\nsmbserver.py -smb2support share /tmp/share -user User -password ''"
+    docker run --rm -it -p 445:445 -v "${PWD}:/tmp/share" impacket:latest 
+}
 
 # +---------+
 # | Strings |
